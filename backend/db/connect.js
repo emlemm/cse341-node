@@ -1,5 +1,5 @@
 const dotenv = require('dotenv');
-const { get } = require('mongoose');
+//const { get } = require('mongoose');
 dotenv.config();
 const MongoClient = require('mongodb').MongoClient;
 
