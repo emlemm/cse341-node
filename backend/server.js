@@ -9,6 +9,7 @@ const app = express();
 
 app
     .use(cors()) //Handles all CORS headers
+    .use(express.json())
     .use((req, res, next) => {
         res.setHeader('Access-Control-Allow-Origin', '*');
         next();

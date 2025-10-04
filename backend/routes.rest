@@ -1,5 +1,24 @@
-GET http://localhost:8080/contacts 
+POST http://localhost:8080/contacts
+Content-Type: application/json
 
-GET http://localhost:8080/contacts/68d70bccc81508413aab0143 
-GET http://localhost:8080/contacts/68d70bd5c81508413aab0144 
-GET http://localhost:8080/contacts/68d70bdcc81508413aab0145 
+{
+    "firstName": "Ben",
+    "lastName": "Lemmon",
+    "email": "gusgus84@yahoo.com",
+    "favoriteColor": "Blue",
+    "birthday": "08-26-1984"
+}
+
+###
+PUT http://localhost:8080/contacts/68e197f6b0ba76c3fa5eec73
+Content-Type: application/json
+
+{
+    "email": "benlemmon11@yahoo.com"
+}
+
+###
+DELETE http://localhost:8080/contacts/68e19813b0ba76c3fa5eec74
+
+###
+GET http://localhost:8080/contacts
